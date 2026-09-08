@@ -1,0 +1,123 @@
+* {
+ box-sizing: border-box;
+}
+
+*, ::before, ::after {
+ margin: 0;
+ padding: 0;
+}
+
+body {
+ background-color: white;
+ font-family: sans-serif;
+ width: 100vw;
+ height: 100vh;
+ overflow-x: hidden;
+}
+
+.form-container {
+ width: 90vw;
+ height: 95vh;
+ margin: auto;
+ display: flex;
+ justify-items: space-evenly;
+ align-content: center;
+ outline: 1px solid black;
+ border-radius: 0.5em;
+ background: linear-gradient(to right, orange, yellow);
+}
+
+form {
+ margin-right: 4em;
+ display: block;
+}
+
+h1 {
+ text-align: center;
+ margin-bottom: 0.5em;
+}
+
+label, input {
+ display: block;
+ padding: 0.5em;
+}
+
+input {
+  width: 50%;
+  appearance: none;
+  border: none;
+  outline: 1px solid black;
+  border-radius: 5px;
+  background-color: white;
+}
+
+input:focus {
+ outline: 2px solid black;
+}
+
+
+input:invalid {
+ outline: 1px solid red;
+}
+
+
+
+
+
+.form-img {
+  background-image: url('./Restaurant.jpg');
+  background-size: cover;
+  width: 50em;
+  height: 100%;
+  border-radius: 10px;
+}
+
+button {
+  text-align: center;
+  padding: 0.5em;
+  width: 100%;
+  margin: 0.3em 0.5em;
+  background: black;
+  color: white;
+  border-radius: 0.5em;
+  margin-top: 2em;
+}
+
+
+.sign-in-option {
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ gap: 1em;
+ width: 110%;
+ height: 10em;
+ position: relative;
+ bottom: 10%;
+}
+
+.sign-in-option p{
+ align-self: end;
+ position: relative;
+ left: -0.6em;
+ padding: 1em;
+}
+
+a {
+ color: blue;
+}
+
+button:hover {
+ transform: scale(1.1);
+ transition: 5s ease in;
+}
+
+
+@media all and (prefers-reduced-motion: no-preference) {
+ * {
+  scroll-behavior: smooth;
+ }
+}
+
+
+
+
+
